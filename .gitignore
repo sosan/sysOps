@@ -28,3 +28,8 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 /.env
+/terraform/registry.txt
+/terraform/kubernetesClusterName.txt
+/terraform/kubeconfig.yaml
+/terraform/.terraform.lock.hcl
+/terraform/.terraform/

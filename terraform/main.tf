@@ -12,7 +12,7 @@ resource "digitalocean_kubernetes_cluster" "keep-secrets-kubernetes" {
   node_pool {
     name       = var.keep-secrets-kubernetes-node-pool-name
     size       = var.keep-secrets-kubernetes-node-pool-size
-    node_count = 1
+    node_count = var.keep-secrets-kubernetes-node-pool-count
   }
 }
 

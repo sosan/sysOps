@@ -1,9 +1,10 @@
-# GITHUB VARS
-variable "keep-secrets-kubernetes-digital-ocean-access-token-github" {
+#### DIGITAL OCEAN VARS ####
+# General
+variable "region" {
   type = string
+  default = "ams3"
 }
 
-#### DIGITAL OCEAN VARS ####
 #Kubernetes
 variable "keep-secrets-kubernetes-cluster-name" {
   type = string
@@ -25,6 +26,12 @@ variable "keep-secrets-kubernetes-node-pool-size" {
   default = "s-1vcpu-2gb"
 }
 
+variable "keep-secrets-kubernetes-node-pool-count" {
+  type = number
+  default = 1
+}
+
+# Container Registry
 variable "keep-secrets-container-registry-name" {
   type = string
   default = "keep-secrets-registry"
@@ -35,12 +42,9 @@ variable "keep-secrets-container-registry-type" {
   default = "starter"
 }
 
+# VPC
 variable "keep-secrets-vpc-name" {
   type = string
   default = "keep-secrets-vpc"
 }
 
-variable "region" {
-  type = string
-  default = "ams3"
-}
