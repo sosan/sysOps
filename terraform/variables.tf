@@ -39,7 +39,7 @@ variable "keep-secrets-container-registry-name" {
 
 variable "keep-secrets-container-registry-type" {
   type = string
-  default = "starter"
+  default = "basic"
 }
 
 # VPC
