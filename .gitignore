@@ -33,3 +33,4 @@ override.tf.json
 /terraform/kubeconfig.yaml
 /terraform/.terraform.lock.hcl
 /terraform/.terraform/
+/load-testing/*csv
