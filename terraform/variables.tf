@@ -28,7 +28,7 @@ variable "keep-secrets-kubernetes-node-pool-size" {
 
 variable "keep-secrets-kubernetes-node-pool-count" {
   type = number
-  default = 1
+  default = 2
 }
 
 # Container Registry
