@@ -12,3 +12,13 @@ resource "local_file" "container-registry" {
   content = "${digitalocean_container_registry.keep-secrets-registry.endpoint}"
   filename = "registry.txt"
 }
+
+resource "local_file" "mongodb-external-uri" {
+  content = "${digitalocean_database_cluster.keep-secrets-mongodb.uri}"
+  filename = "mongodb-external-uri.txt"
+}
+
+resource "local_file" "mongodb-external-private-uri" {
+  content = "${digitalocean_database_cluster.keep-secrets-mongodb.private_uri}"
+  filename = "mongodb-internal-uri.txt"
+}
