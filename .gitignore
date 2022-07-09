@@ -34,3 +34,5 @@ override.tf.json
 /terraform/.terraform.lock.hcl
 /terraform/.terraform/
 /load-testing/*csv
+/terraform/mongodb-external-uri.txt
+/terraform/mongodb-internal-uri.txt
