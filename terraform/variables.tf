@@ -5,7 +5,7 @@ variable "region" {
   default = "ams3"
 }
 
-#Kubernetes
+# Kubernetes
 variable "keep-secrets-kubernetes-cluster-name" {
   type = string
   default = "keep-secrets"
@@ -37,6 +37,12 @@ variable "keep-secrets-container-registry-name" {
   default = "keep-secrets-registry"
 }
 
+variable "keep-secrets-mongodb-name" {
+  type = string
+  default = "keep-secrets-mongodb"
+}
+
+# Database Mongodb
 variable "keep-secrets-container-registry-type" {
   type = string
   default = "basic"

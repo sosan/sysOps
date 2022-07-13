@@ -22,3 +22,13 @@ resource "digitalocean_container_registry" "keep-secrets-registry" {
   region                 = var.region
 }
 
+resource "digitalocean_database_cluster" "keep-secrets-mongodb" {
+  name       = var.keep-secrets-mongodb-name
+  engine     = "mongodb"
+  version    = "4"
+  size       = "db-s-1vcpu-1gb"
+  region     = var.region
+  node_count = 1
+  private_network_uuid = digitalocean_vpc.keep-secrets-vpc.id
+}
+
